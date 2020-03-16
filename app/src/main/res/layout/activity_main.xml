@@ -35,14 +35,14 @@
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
-                android:layout_weight="10"
+                android:layout_weight="20"
                 android:fontFamily="serif"
-                android:text="<" />
+                android:text=" n1 is less than n2 " />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0px"
-                android:layout_weight="30" />
+                android:layout_weight="40" />
         </LinearLayout>
 
         <LinearLayout
@@ -103,9 +103,9 @@
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
-                android:layout_weight="10"
+                android:layout_weight="20"
                 android:fontFamily="serif"
-                android:text="=" />
+                android:text=" n1 is eqaul to n2 " />
 
             <Space
                 android:layout_width="match_parent"
@@ -116,9 +116,9 @@
                 android:id="@+id/button5"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="10"
+                android:layout_weight="20"
                 android:fontFamily="serif"
-                android:text="Click for numbers" />
+                android:text="Random numbers" />
 
             <Space
                 android:layout_width="match_parent"
@@ -150,14 +150,14 @@
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="10"
+                android:layout_weight="20"
                 android:fontFamily="serif"
-                android:text=">" />
+                android:text=" n1 is more than n2 " />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="30" />
+                android:layout_weight="40" />
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
