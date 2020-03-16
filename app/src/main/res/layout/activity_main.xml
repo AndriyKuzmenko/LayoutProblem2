@@ -37,6 +37,7 @@
                 android:layout_height="0px"
                 android:layout_weight="20"
                 android:fontFamily="serif"
+                android:onClick="less"
                 android:text=" n1 is less than n2 " />
 
             <Space
@@ -105,6 +106,7 @@
                 android:layout_height="0px"
                 android:layout_weight="20"
                 android:fontFamily="serif"
+                android:onClick="equals"
                 android:text=" n1 is eqaul to n2 " />
 
             <Space
@@ -153,6 +155,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="20"
                 android:fontFamily="serif"
+                android:onClick="more"
                 android:text=" n1 is more than n2 " />
 
             <Space

@@ -45,5 +45,86 @@ public class MainActivity extends AppCompatActivity
         num1=r.nextInt();
         num2=r.nextInt();
         started=true;
+
+        num1TV.setText("1st number");
+        num2TV.setText("2nd number");
+    }
+
+    public void less(View view)
+    {
+        showNumbers();
+        if (started)
+        {
+            if (num1 < num2)
+            {
+                counter++;
+                counterTV.setText("Counter: " + counter);
+                trueFalseTV.setText("TRUE");
+            }
+            else
+            {
+                trueFalseTV.setText("FALSE");
+            }
+            started=false;
+        }
+        else
+        {
+            trueFalseTV.setText("Press random numbers");
+        }
+    }
+
+    public void equals(View view)
+    {
+        showNumbers();
+        if (started)
+        {
+            if (num1 == num2)
+            {
+                counter++;
+                counterTV.setText("Counter: " + counter);
+                trueFalseTV.setText("TRUE");
+            }
+            else
+            {
+                trueFalseTV.setText("FALSE");
+            }
+            started=false;
+        }
+        else
+        {
+            trueFalseTV.setText("Press random numbers");
+        }
+    }
+
+    public void more(View view)
+    {
+        showNumbers();
+        if (started)
+        {
+            if (num1 > num2)
+            {
+                counter++;
+                counterTV.setText("Counter: " + counter);
+                trueFalseTV.setText("TRUE");
+            }
+            else
+            {
+                trueFalseTV.setText("FALSE");
+            }
+            started=false;
+        }
+        else
+        {
+            trueFalseTV.setText("Press random numbers");
+        }
+    }
+
+    private void showNumbers()
+    {
+        if (started)
+        {
+            num1TV.setText("" + num1);
+            num2TV.setText("" + num2);
+        }
     }
 }
