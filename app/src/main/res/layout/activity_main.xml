@@ -62,6 +62,7 @@
                 android:layout_height="0px"
                 android:layout_weight="10"
                 android:fontFamily="serif"
+                android:onClick="reset"
                 android:text="Clear" />
 
             <Space
@@ -76,7 +77,7 @@
                 android:layout_weight="10"
                 android:fontFamily="serif"
                 android:gravity="center"
-                android:text="Counter" />
+                android:text="Counter: 0" />
 
             <Space
                 android:layout_width="match_parent"
