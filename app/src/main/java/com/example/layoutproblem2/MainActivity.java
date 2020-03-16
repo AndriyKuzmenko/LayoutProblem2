@@ -38,6 +38,11 @@ public class MainActivity extends AppCompatActivity
     {
         counter=0;
         counterTV.setText("Counter: "+counter);
+        started=false;
+
+        num1TV.setText("1st number");
+        num2TV.setText("2nd number");
+        trueFalseTV.setText("True/False");
     }
 
     public void randomNumbers(View view)
@@ -48,6 +53,7 @@ public class MainActivity extends AppCompatActivity
 
         num1TV.setText("1st number");
         num2TV.setText("2nd number");
+        trueFalseTV.setText("True/False");
     }
 
     public void less(View view)
