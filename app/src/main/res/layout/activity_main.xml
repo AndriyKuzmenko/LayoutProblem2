@@ -118,6 +118,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="20"
                 android:fontFamily="serif"
+                android:onClick="randomNumbers"
                 android:text="Random numbers" />
 
             <Space

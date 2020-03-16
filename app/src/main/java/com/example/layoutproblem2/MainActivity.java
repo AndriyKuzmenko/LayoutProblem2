@@ -1,7 +1,7 @@
 package com.example.layoutproblem2;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import java.util.Random;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity
     TextView num2TV;
     int num1;
     int num2;
+    Random r;
+    boolean started;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -23,6 +25,9 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         counter=0;
+        started=false;
+        r=new Random();
+
         counterTV=(TextView)findViewById(R.id.textView);
         trueFalseTV=(TextView)findViewById(R.id.textView2);
         num1TV=(TextView)findViewById(R.id.textView4);
@@ -35,5 +40,10 @@ public class MainActivity extends AppCompatActivity
         counterTV.setText("Counter: "+counter);
     }
 
-
+    public void randomNumbers(View view)
+    {
+        num1=r.nextInt();
+        num2=r.nextInt();
+        started=true;
+    }
 }
