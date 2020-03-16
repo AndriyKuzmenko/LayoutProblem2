@@ -27,14 +27,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
-                android:text="TextView" />
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="1st number" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
-                android:text="Button" />
+                android:fontFamily="serif"
+                android:text="<" />
 
             <Space
                 android:layout_width="match_parent"
@@ -58,7 +61,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
-                android:text="Button" />
+                android:fontFamily="serif"
+                android:text="Clear" />
 
             <Space
                 android:layout_width="match_parent"
@@ -70,7 +74,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
-                android:text="TextView" />
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Counter" />
 
             <Space
                 android:layout_width="match_parent"
@@ -82,7 +88,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
-                android:text="TextView" />
+                android:fontFamily="serif"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="True/False" />
 
             <Space
                 android:layout_width="match_parent"
@@ -94,19 +103,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
-                android:text="Button" />
+                android:fontFamily="serif"
+                android:text="=" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10" />
 
-            <TextView
-                android:id="@+id/textView3"
+            <Button
+                android:id="@+id/button5"
                 android:layout_width="match_parent"
-                android:layout_height="0px"
+                android:layout_height="0dp"
                 android:layout_weight="10"
-                android:text="TextView" />
+                android:fontFamily="serif"
+                android:text="Click for numbers" />
 
             <Space
                 android:layout_width="match_parent"
@@ -130,14 +141,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="10"
-                android:text="TextView" />
+                android:fontFamily="serif"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="2nd number" />
 
             <Button
                 android:id="@+id/button4"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="10"
-                android:text="Button" />
+                android:fontFamily="serif"
+                android:text=">" />
 
             <Space
                 android:layout_width="match_parent"
