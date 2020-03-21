@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity
         lessButton.setText("<");
         equalsButton.setText("=");
         moreButton.setText(">");
+
+        randomNumbers();
     }
 
     public void reset(View view)
@@ -60,6 +62,8 @@ public class MainActivity extends AppCompatActivity
         num1TV.setText("1st number");
         num2TV.setText("2nd number");
         trueFalseTV.setText("True/False");
+
+        randomNumbers(view);
     }
 
     public void randomNumbers(View view)
@@ -155,5 +159,16 @@ public class MainActivity extends AppCompatActivity
             num1TV.setText("" + num1);
             num2TV.setText("" + num2);
         }
+    }
+
+    public void randomNumbers()
+    {
+        num1=r.nextInt();
+        num2=r.nextInt();
+        started=true;
+
+        num1TV.setText("1st number");
+        num2TV.setText("2nd number");
+        trueFalseTV.setText("True/False");
     }
 }
