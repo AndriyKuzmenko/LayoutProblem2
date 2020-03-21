@@ -5,10 +5,12 @@ import java.util.Random;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Button;
+
 
 public class MainActivity extends AppCompatActivity
 {
-    int counter;
+    double counter;
     TextView counterTV;
     TextView trueFalseTV;
     TextView num1TV;
@@ -17,6 +19,9 @@ public class MainActivity extends AppCompatActivity
     int num2;
     Random r;
     boolean started;
+    double totalCounter;
+    double percent;
+    Button lessButton, equalsButton, moreButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -25,6 +30,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         counter=0;
+        totalCounter=0;
         started=false;
         r=new Random();
 
@@ -32,12 +38,21 @@ public class MainActivity extends AppCompatActivity
         trueFalseTV=(TextView)findViewById(R.id.textView2);
         num1TV=(TextView)findViewById(R.id.textView4);
         num2TV=(TextView)findViewById(R.id.textView5);
+
+        lessButton=(Button)findViewById(R.id.button3);
+        equalsButton=(Button)findViewById(R.id.button2);
+        moreButton=(Button)findViewById(R.id.button4);
+
+        lessButton.setText("<");
+        equalsButton.setText("=");
+        moreButton.setText(">");
     }
 
     public void reset(View view)
     {
         counter=0;
-        counterTV.setText("Counter: "+counter);
+        totalCounter=0;
+        counterTV.setText("0%");
         started=false;
 
         num1TV.setText("1st number");
@@ -58,19 +73,21 @@ public class MainActivity extends AppCompatActivity
 
     public void less(View view)
     {
+        totalCounter++;
         showNumbers();
         if (started)
         {
             if (num1 < num2)
             {
                 counter++;
-                counterTV.setText("Counter: " + counter);
                 trueFalseTV.setText("TRUE");
             }
             else
             {
                 trueFalseTV.setText("FALSE");
             }
+            percent=counter/totalCounter*100;
+            counterTV.setText(percent+"%");
             started=false;
         }
         else
@@ -81,13 +98,13 @@ public class MainActivity extends AppCompatActivity
 
     public void equals(View view)
     {
+        totalCounter++;
         showNumbers();
         if (started)
         {
             if (num1 == num2)
             {
                 counter++;
-                counterTV.setText("Counter: " + counter);
                 trueFalseTV.setText("TRUE");
             }
             else
@@ -95,6 +112,8 @@ public class MainActivity extends AppCompatActivity
                 trueFalseTV.setText("FALSE");
             }
             started=false;
+            percent=counter/totalCounter*100;
+            counterTV.setText(percent+"%");
         }
         else
         {
@@ -104,13 +123,13 @@ public class MainActivity extends AppCompatActivity
 
     public void more(View view)
     {
+        totalCounter++;
         showNumbers();
         if (started)
         {
             if (num1 > num2)
             {
                 counter++;
-                counterTV.setText("Counter: " + counter);
                 trueFalseTV.setText("TRUE");
             }
             else
@@ -118,6 +137,8 @@ public class MainActivity extends AppCompatActivity
                 trueFalseTV.setText("FALSE");
             }
             started=false;
+            percent=counter/totalCounter*100;
+            counterTV.setText(percent+"%");
         }
         else
         {
