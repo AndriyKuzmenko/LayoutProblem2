@@ -1,3 +1,5 @@
+//This is the best code ever
+
 package com.example.layoutproblem2;
 
 import androidx.appcompat.app.AppCompatActivity;
