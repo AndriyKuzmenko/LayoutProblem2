@@ -1,3 +1,4 @@
+//Comment
 package com.example.layoutproblem2;
 
 import androidx.appcompat.app.AppCompatActivity;
